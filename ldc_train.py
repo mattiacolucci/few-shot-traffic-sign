@@ -131,7 +131,7 @@ class Config10Dataset(object):
                 "food101": [Food101, 101, "food-101"], "oxford_flowers": [OxfordFlowers, 102, "oxford_flowers"],
                 "oxford_pets": [OxfordPets, 37, "oxford_pets"], "stanford_cars": [StanfordCars, 196, "stanford_cars"],
                 "sun397": [SUN397, 397, "sun397"], "ucf101": [UCF101, 101, "ucf101"],
-                "artwork": [CustomDataset, 100, "artwork"], "artwork_style":[CustomDataset, 100, "artwork_style"]}
+                "traffic-sign": [CustomDataset, 43, "traffic-sign"]}
 
     pass
 
@@ -669,37 +669,3 @@ if __name__ == '__main__':
     print(f"Recall: {total_avg_recall:.4f}")
     print(f"F1-Score: {total_avg_f1:.4f}")
 '''
-
-if __name__ == '__main__':
-    dataset_name="artwork"
-    shots=16
-    save_dir = dataset_name+"_100_way_"+str(shots)+"_shot_elastic_reg"
-    log_txt_path = Tools.new_dir(os.path.join(LOG_ROOT, save_dir, "results.txt"))
-
-    # Create the configuration for the custom dataset
-    config = Config10Dataset(
-        dataset_name=dataset_name,
-        seed=2024,
-        shots=shots,
-        backbone="ViT-B/16",
-        lr=0.001,
-        batch_size=64,
-        train_epoch=50,
-        loss_lambda=[1.0, 1.0, 1.0, 1.0, 1.0, 1.0],   #last is regularization lambda
-        fuse_type=2,
-        save_dir=save_dir,
-        regularization='elastic_net'
-    )
-
-    # Initialize the Runner with the custom dataset configuration
-    runner = Runner(config=config)
-
-    # Start the training process
-    Tools.print("Starting training with the custom dataset...")
-    acc_list = runner.train()
-    Tools.print({"name": "artwork", "acc": acc_list, "detail": config.get_detail()}, log_txt_path)
-
-    # Optionally, evaluate the model
-    Tools.print("Evaluating the model...")
-    test_acc_list = runner.test()
-    Tools.print({"name": "artwork", "test_acc": test_acc_list}, log_txt_path)
