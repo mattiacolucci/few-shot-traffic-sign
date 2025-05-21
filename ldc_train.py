@@ -131,7 +131,7 @@ class Config10Dataset(object):
                 "food101": [Food101, 101, "food-101"], "oxford_flowers": [OxfordFlowers, 102, "oxford_flowers"],
                 "oxford_pets": [OxfordPets, 37, "oxford_pets"], "stanford_cars": [StanfordCars, 196, "stanford_cars"],
                 "sun397": [SUN397, 397, "sun397"], "ucf101": [UCF101, 101, "ucf101"],
-                "traffic-sign": [CustomDataset, 43, "traffic-sign"]}
+                "traffic-signs": [CustomDataset, 43, "traffic-signs"]}
 
     pass
 
