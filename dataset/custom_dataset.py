@@ -2,7 +2,7 @@ import os
 from torch.utils.data import Dataset
 from torchvision.datasets.folder import default_loader
 from torchvision.transforms import Compose
-from datasets.utils import Datum  # Import the Datum class
+from dataset.utils import Datum  # Import the Datum class
 
 
 class CustomDataset(Dataset):

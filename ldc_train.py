@@ -8,7 +8,7 @@ import torch.nn.functional as F
 import torchvision.transforms as T
 from alisuretool.Tools import Tools
 from torch.utils.data import DataLoader
-from datasets.utils import DatasetWrapper
+from dataset.utils import DatasetWrapper
 from torchvision.transforms import InterpolationMode
 from torchvision.transforms import Compose, Resize, CenterCrop, ToTensor, Normalize
 import matplotlib.pyplot as plt
@@ -114,17 +114,17 @@ class Config10Dataset(object):
 
     @staticmethod
     def dataset_info():
-        from datasets.oxford_pets import OxfordPets
-        from datasets.eurosat import EuroSAT
-        from datasets.ucf101 import UCF101
-        from datasets.sun397 import SUN397
-        from datasets.caltech101 import Caltech101
-        from datasets.dtd import DescribableTextures
-        from datasets.fgvc import FGVCAircraft
-        from datasets.food101 import Food101
-        from datasets.oxford_flowers import OxfordFlowers
-        from datasets.stanford_cars import StanfordCars
-        from datasets.custom_dataset import CustomDataset
+        from dataset.oxford_pets import OxfordPets
+        from dataset.eurosat import EuroSAT
+        from dataset.ucf101 import UCF101
+        from dataset.sun397 import SUN397
+        from dataset.caltech101 import Caltech101
+        from dataset.dtd import DescribableTextures
+        from dataset.fgvc import FGVCAircraft
+        from dataset.food101 import Food101
+        from dataset.oxford_flowers import OxfordFlowers
+        from dataset.stanford_cars import StanfordCars
+        from dataset.custom_dataset import CustomDataset
 
         return {"caltech101": [Caltech101, 100, "caltech-101"], "dtd": [DescribableTextures, 47, "dtd"],
                 "fgvc": [FGVCAircraft, 100, "fgvc_aircraft"], "eurosat": [EuroSAT, 10, "eurosat"],
@@ -159,9 +159,9 @@ class ConfigImageDomainShift(object):
         self.data_path_imagenet_v2 = os.path.join(DATA_ROOT, 'imagenetv2/imagenetv2-matched-frequency-format-val')
         self.data_path_imagenet_sketch = os.path.join(DATA_ROOT, 'imagenet-sketch/images')
 
-        from datasets.imagenet import MyImageNet
-        from datasets.imagenetv2 import ImageNetV2
-        from datasets.imagenet_sketch import ImageNetSketch
+        from dataset.imagenet import MyImageNet
+        from dataset.imagenetv2 import ImageNetV2
+        from dataset.imagenet_sketch import ImageNetSketch
         self.dataset = MyImageNet(self.data_path_imagenet, self.shots, 'train', MyTransform.transform_train(224))
         self.test_set = MyImageNet(root=self.data_path_imagenet, num_shots=self.shots,
                                    split='test', transform=MyTransform.transform_test(224))
