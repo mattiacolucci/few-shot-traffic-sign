@@ -7,3 +7,6 @@ datasets/__pycache__/fgvc.cpython-37.pyc
 /__pycache__
 /__hugging_face_cache__
 /dataset/datasets/belgium-traffic-sign
+/dataset/
+/__few_shot_cache__
+/clip_ldc/__pycache__
