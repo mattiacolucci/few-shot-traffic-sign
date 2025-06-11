@@ -1,0 +1,119 @@
+[2025-06-11 10:03:39] LOG:
+
+PERFORMING COMPARISON USING 5CROSS-VALIDATION AND 16-SHOT LEARNING
+#######################################
+CNNModel VS FewShotModel
+#######################################
+
+Processing the Kaggle dataset: indian_dataset
+Number of filtered labels: 58
+Number of removed labels: 0
+Number of samples in the dataset: 13971
+
+Iteration: 0
+
+Iteration: 1
+
+Iteration: 2
+
+Iteration: 3
+
+Iteration: 4
+Processing the Kaggle dataset: persian_dataset
+Number of filtered labels: 43
+Number of removed labels: 0
+Number of samples in the dataset: 14405
+
+Iteration: 0
+
+Iteration: 1
+
+Iteration: 2
+
+Iteration: 3
+
+Iteration: 4
+Processing the Kaggle dataset: bangladesh_dataset
+Number of filtered labels: 43
+Number of removed labels: 0
+Number of samples in the dataset: 73139
+
+Iteration: 0
+
+Iteration: 1
+
+Iteration: 2
+
+Iteration: 3
+
+Iteration: 4
+Processing the Hugging Face dataset: chinese_dataset
+Number of filtered labels: 47
+Number of removed labels: 11
+Number of samples in the dataset: 5902
+
+Iteration: 0
+
+Iteration: 1
+
+Iteration: 2
+
+Iteration: 3
+
+Iteration: 4
+Processing the Hugging Face dataset: german_dataset
+Number of filtered labels: 43
+Number of removed labels: 0
+Number of samples in the dataset: 51839
+
+Iteration: 0
+
+Iteration: 1
+
+Iteration: 2
+
+Iteration: 3
+
+Iteration: 4
+Processing the Hugging Face dataset: russian_dataset
+Number of filtered labels: 139
+Number of removed labels: 59
+Number of samples in the dataset: 103841
+
+Iteration: 0
+
+Iteration: 1
+
+Iteration: 2
+
+Iteration: 3
+
+Iteration: 4
+Processing the local dataset: belgian_dataset
+Number of filtered labels: 52
+Number of removed labels: 10
+Number of samples in the dataset: 6970
+
+Iteration: 0
+
+Iteration: 1
+
+Iteration: 2
+
+Iteration: 3
+
+Iteration: 4
+
+            T-test results
+            - t_statistic: 1.127406471112095
+            - t_critical: 2.4469118511449692
+
+            Performance results:
+            - Non-few shot: [0.09258451562117294, 0.11763893594819297, 0.23740460696285268, 0.06430566350944664, 0.22902650315631598, 0.002725282399667528, 0.02987157105717898]
+            - Few-shot: [0.08598003648310103, 0.05593259508145378, 0.01864039681356737, 0.10839532584362463, 0.030193518701474527, 0.04323681582983021, 0.08509923291371736]
+
+            Final outcome:
+            - result: False
+            
+
+-------------------------------------------------------------------

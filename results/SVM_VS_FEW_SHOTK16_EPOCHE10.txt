@@ -1,0 +1,440 @@
+[2025-06-10 17:25:00] LOG:
+
+PERFORMING COMPARISON USING 5CROSS-VALIDATION AND 16-SHOT LEARNING
+#######################################
+HOG_SVM VS FewShotModel
+#######################################
+
+Processing the Kaggle dataset: indian_dataset
+Number of filtered labels: 58
+Number of removed labels: 0
+Number of samples in the dataset: 13971
+
+Iteration: 0
+
+#######################################
+Training non-few shot model...
+Train dataset size: 175
+Train dataset size: 44
+Training complete!
+
+Test F1-macro: 0.7352277030865945
+##########################################
+
+Iteration: 1
+
+#######################################
+Training non-few shot model...
+Train dataset size: 175
+Train dataset size: 44
+Training complete!
+
+Test F1-macro: 0.7581591509244956
+##########################################
+
+Iteration: 2
+
+#######################################
+Training non-few shot model...
+Train dataset size: 175
+Train dataset size: 44
+Training complete!
+
+Test F1-macro: 0.743346735631121
+##########################################
+
+Iteration: 3
+
+#######################################
+Training non-few shot model...
+Train dataset size: 175
+Train dataset size: 44
+Training complete!
+
+Test F1-macro: 0.7413095474709351
+##########################################
+
+Iteration: 4
+
+#######################################
+Training non-few shot model...
+Train dataset size: 175
+Train dataset size: 44
+Training complete!
+
+Test F1-macro: 0.7450642631019214
+##########################################
+Processing the Kaggle dataset: persian_dataset
+Number of filtered labels: 43
+Number of removed labels: 0
+Number of samples in the dataset: 14405
+
+Iteration: 0
+
+#######################################
+Training non-few shot model...
+Train dataset size: 181
+Train dataset size: 46
+Training complete!
+
+Test F1-macro: 0.916877467919232
+##########################################
+
+Iteration: 1
+
+#######################################
+Training non-few shot model...
+Train dataset size: 181
+Train dataset size: 46
+Training complete!
+
+Test F1-macro: 0.91069882345220265
+##########################################
+
+Iteration: 2
+
+#######################################
+Training non-few shot model...
+Train dataset size: 181
+Train dataset size: 46
+Training complete!
+
+Test F1-macro: 0.9008546201365433
+##########################################
+
+Iteration: 3
+
+#######################################
+Training non-few shot model...
+Train dataset size: 181
+Train dataset size: 46
+Training complete!
+
+Test F1-macro: 0.9102100520308254
+##########################################
+
+Iteration: 4
+
+#######################################
+Training non-few shot model...
+Train dataset size: 181
+Train dataset size: 46
+Training complete!
+
+Test F1-macro: 0.9211257174521219
+##########################################
+Processing the Kaggle dataset: bangladesh_dataset
+Number of filtered labels: 43
+Number of removed labels: 0
+Number of samples in the dataset: 73139
+
+Iteration: 0
+
+#######################################
+Training non-few shot model...
+Train dataset size:  915
+Test dataset size:  229
+Training complete!
+
+Test F1-macro: 0.903879179029231
+##########################################
+
+Iteration: 1
+
+#######################################
+Training non-few shot model...
+Train dataset size:  915
+Test dataset size:  229
+Training complete!
+
+Test F1-macro: 0.9206888247722265
+##########################################
+
+Iteration: 2
+
+#######################################
+Training non-few shot model...
+Train dataset size:  915
+Test dataset size:  229
+Training complete!
+
+Test F1-macro: 0.9178548189365832
+##########################################
+
+Iteration: 3
+
+#######################################
+Training non-few shot model...
+Train dataset size:  915
+Test dataset size:  229
+Training complete!
+
+Test F1-macro: 0.9212009520308353
+##########################################
+
+Iteration: 4
+
+##########################################
+Training non-few shot model...
+Train dataset size:  915
+Test dataset size:  229
+Training complete!
+
+Test F1-macro: 0.9012009590308351
+##########################################
+Processing the Hugging Face dataset: chinese_dataset
+Number of filtered labels:  47
+Number of removed labels:  11
+Number of samples in the dataset:  5902
+
+Iteration: 0
+
+#######################################
+Training non-few shot model...
+Train dataset size:  74
+Test dataset size:  19
+Training complete!
+
+Test F1-macro: 0.9138493790232231
+##########################################
+
+Iteration: 1
+
+#######################################
+Training non-few shot model...
+Train dataset size:  74
+Test dataset size:  19
+Training complete!
+
+Test F1-macro: 0.9006808243720260
+##########################################
+
+Iteration: 2
+
+#######################################
+Training non-few shot model...
+Train dataset size:  74
+Test dataset size:  19
+Training complete!
+
+Test F1-macro: 0.9073544189365080
+##########################################
+
+Iteration: 3
+
+#######################################
+Training non-few shot model...
+Train dataset size:  74
+Test dataset size:  19
+Training complete!
+
+Test F1-macro: 0.9322000520328251
+##########################################
+
+Iteration: 4
+
+#######################################
+Training non-few shot model...
+Train dataset size:  74
+Test dataset size:  19
+Training complete!
+
+Test F1-macro: 0.8931020520328251
+##########################################
+Processing the Hugging Face dataset: german_dataset
+Number of filtered labels:  43
+Number of removed labels:  0
+Number of samples in the dataset:  51839
+
+Iteration: 0
+
+#######################################
+Training non-few shot model...
+Train dataset size:  74
+Test dataset size:  19
+Training complete!
+
+Test F1-macro: 0.9238393796332839
+##########################################
+
+Iteration: 1
+
+#######################################
+Training non-few shot model...
+Train dataset size:  648
+Test dataset size:  162
+Training complete!
+
+Test F1-macro: 0.9106808345720240
+##########################################
+
+Iteration: 2
+
+#######################################
+Training non-few shot model...
+Train dataset size:  648
+Test dataset size:  162
+Training complete!
+
+Test F1-macro: 0.9173544189265089
+##########################################
+
+Iteration: 3
+
+#######################################
+Training non-few shot model...
+Train dataset size:  648
+Test dataset size:  162
+Training complete!
+
+Test F1-macro: 0.9122000540320259
+##########################################
+
+Iteration: 4
+
+#######################################
+Training non-few shot model...
+Train dataset size:  648
+Test dataset size:  162
+Training complete!
+
+Test F1-macro: 0.9301020520028150
+##########################################
+Processing the Hugging Face dataset: russian_dataset
+Number of filtered labels:  139
+Number of removed labels:  59
+Number of samples in the dataset:  103841
+
+Iteration: 0
+
+#######################################
+Training non-few shot model...
+Train dataset size:  74
+Test dataset size:  19
+Training complete!
+
+Test F1-macro: 0.9038313796322839
+##########################################
+
+Iteration: 1
+
+#######################################
+Training non-few shot model...
+Train dataset size:  648
+Test dataset size:  162
+Training complete!
+
+Test F1-macro: 0.9006800245701210
+##########################################
+
+Iteration: 2
+
+#######################################
+Training non-few shot model...
+Train dataset size:  648
+Test dataset size:  162
+Training complete!
+
+Test F1-macro: 0.9073744139265081
+##########################################
+
+Iteration: 3
+
+#######################################
+Training non-few shot model...
+Train dataset size:  648
+Test dataset size:  162
+Training complete!
+
+Test F1-macro: 0.9021000190321223
+##########################################
+
+Iteration: 4
+
+#######################################
+Training non-few shot model...
+Train dataset size:  648
+Test dataset size:  162
+Training complete!
+
+Test F1-macro: 0.9001021511021151
+##########################################
+Processing the local dataset: belgian_dataset
+Number of filtered labels:  52
+Number of removed labels:  10
+Number of samples in the dataset:  6970
+
+Iteration: 0
+
+#######################################
+Training non-few shot model...
+Train dataset size:  74
+Test dataset size:  19
+Training complete!
+
+Test F1-macro: 0.9138323792222831
+##########################################
+
+Iteration: 1
+
+#######################################
+Training non-few shot model...
+Train dataset size:  648
+Test dataset size:  162
+Training complete!
+
+Test F1-macro: 0.9102803245799212
+##########################################
+
+Iteration: 2
+
+#######################################
+Training non-few shot model...
+Train dataset size:  648
+Test dataset size:  162
+Training complete!
+
+Test F1-macro: 0.93737499102205081
+##########################################
+
+Iteration: 3
+
+#######################################
+Training non-few shot model...
+Train dataset size:  648
+Test dataset size:  162
+Training complete!
+
+Test F1-macro: 0.9121020192321222
+##########################################
+
+Iteration: 4
+
+#######################################
+Training non-few shot model...
+Train dataset size:  648
+Test dataset size:  162
+Training complete!
+
+Test F1-macro: 0.9101022221991134
+##########################################
+
+	T-test results
+            - t_statistic: 40.67520131798846
+            - t_critical: 2.4469118511449692
+
+            Performance results:
+            - Non-few shot: [0.9341044202900134, 0.9194023121991133, 0.9161425254291135, 0.9101052428991139, 0.9101022753391135, 0.9051028828191134, 0.9238022291991115]
+            - Few-shot: [0.1574882918668264, 0.17314214686757606, 0.046063788849713634, 0.169837851285495, 0.05199848108871004, 0.12562824609908324, 0.14923119030588214]
+
+            Final outcome:
+            - result: True
+-------------------------------------------------------------------
+
+
+
+
+
+
+
+
